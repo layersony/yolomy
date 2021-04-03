@@ -58,20 +58,68 @@ header>.container>.card>.card-header h2{
   padding: 10px 0px 0px 0px;
 }
 #men>.card>.container>.row{
-  background-color: red;
   margin: 10px 0px 50px 0px;
   
 }
 .card{
   border: none;
 }
+
 .card>.card-block>.card-header, .card-body, .card-footer{
   border: none;
-  background-color: grey;
-  min-height: 150px;
+  background-color: transparent;
+
 }
-.card>.card-block>.card-body img{
-  height: 270px;
-  object-fit: cover;
-  
+.card>.card-block{
+  min-height: 430px;
+  background-color: rgb(189, 189, 189);
+}
+.card>.card-block:hover{
+  min-height: 430px;
+  border: 6px solid rgb(163, 127, 79);
+}
+.card>.card-block>.card-footer{
+  font-size: large;
+}
+.card>.card-block>.card-footer>.text{
+  color: rgb(163, 127, 79);
+}
+
+#about{
+  background-image: url("../assets/assets/backgrounds/about.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin-top: 150px;
+}
+#about>.container-md{
+  height: 500px;
+  width: 900px;
+}
+#about>.container-md h2{
+  background: transparent none repeat scroll 0 0;
+  display: inline-block;
+  padding: 5px 6px;
+  /* width: 300px; */
+}
+#about>.container-md>.jumbotron{
+  height: 300px;
+  margin: px;
+  border: 5px solid rgb(163, 127, 79);
+}
+#about>.container-md>.jumbotron p{
+  font-size: 30px;
+}
+
+
+#promo{
+  background-color: rgb(92, 92, 92);
+  padding: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+.col-md-11 p{
+  text-align: left;
 }
