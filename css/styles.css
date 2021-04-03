@@ -123,3 +123,18 @@ header>.container>.card>.card-header h2{
 .col-md-11 p{
   text-align: left;
 }
+
+.desc{
+  background-color: indianred;
+}
+.desc>.card{
+  margin-top: 20px;
+  text-align: left;
+}
+.social{
+  background-color: rgb(12, 32, 88);
+}
+.link{
+  background-color: rgb(105, 205, 92);
+}
+
