@@ -1,0 +1,77 @@
+*{
+  text-align: center;
+}
+
+header{
+  background-image: url('../assets/assets/backgrounds/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.navbar{
+  padding: 30px
+}
+.navbar-nav a{
+  color: white;
+  margin: 10px;
+}
+header>.container>.card{
+  background-color: transparent;
+  margin-top: 200px;
+  border: none;
+  color: white;
+}
+header>.container>.card>.card-header h1{
+  border: none;
+  font-size: 60px;
+  margin: 30px 0px 80px 0px;
+}
+header>.container>.card>.card-header h2{
+  font-size: 40px;
+}
+#choose{
+  padding: 30px;
+  background-color:rgb(163, 127, 79);
+}
+
+.right input{
+  background-color: rgb(104, 36, 36);
+  height: 50px;
+  width: 290px;
+  margin: 25px;
+  color: white;
+  border-radius: 5px;
+}
+.left{
+  text-align: left;
+  padding: 20px;
+}
+.left label{
+  padding: 15px;
+}
+
+#men>.card{
+  margin: 50px 0px 2px 0px;
+
+}
+#men>.card>.row{
+  padding: 10px 0px 0px 0px;
+}
+#men>.card>.container>.row{
+  background-color: red;
+  margin: 10px 0px 50px 0px;
+  
+}
+.card{
+  border: none;
+}
+.card>.card-block>.card-header, .card-body, .card-footer{
+  border: none;
+  background-color: grey;
+  min-height: 150px;
+}
+.card>.card-block>.card-body img{
+  height: 270px;
+  object-fit: cover;
+  
+}

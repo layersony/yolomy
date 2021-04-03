@@ -5,70 +5,127 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>YOLOMY</title>
 </head>
 <body>
   <!-- header section -->
   <header>
-    <div>
-      <div class="logo">
-        <img src="./assets/assets/logo/logo.png" alt="logo">
-      </div>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li><img src="./assets/assets/logo/shop.png" alt="shopping cart"></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand"><img src="./assets/assets/logo/logo.png" alt="logo"></a>
+        </div>
 
-    <div class="header">
-      <div class="h-title">
-        <h2>Our clothing, your comfort</h2>
+        <div class="navbar-nav">
+          <a class="nav-link nav-item" href="#">Home</a>
+          <a class="nav-link nav-item" href="#">Products</a>
+          <a class="nav-link nav-item" href="#"><img src="./assets/assets/logo/shop.png" alt="shop"></a>
+        </div>
+
       </div>
-      <div class="h-body">
-        <p>We understand that you need to look good and feel freat.</p>
-        <p>It all starts with what you are wearing</p>
+    </nav>
+
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+            <h1>Our clothing, your comfort</h1>
+        </div>
+        <div class="card-body">
+            <p>We understand that you need to look good and feel freat.</p>
+            <p>It all starts with what you are wearing</p>
+        </div>
       </div>
+      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+      </svg></div>
     </div>
-    <div class="arrow"></div>
   </header>
 
   <!-- preference section -->
   <section id="choose">
-    <div class="pref">
-      <input type="checkbox" name="Men" id="person">
-      <label for="men">MEN</label>
-      <input type="checkbox" name="Women" id="person">
-      <label for="men">WOMEN</label>
-      <input type="checkbox" name="Children" id="person">
-      <label for="men">CHILDREN</label>
-    </div>
-    <div class="see-all">
-      <input type="button" value="SEE ALL PRODUCTS">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 left">
+          <input type="checkbox" name="Men" id="person">
+          <label for="men">MEN</label>
+          <input type="checkbox" name="Women" id="person">
+          <label for="men">WOMEN</label>
+          <input type="checkbox" name="Children" id="person">
+          <label for="men">CHILDREN</label>
+        </div>
+        <div class="col-md-4 right">
+          <input type="button" value="SEE ALL PRODUCTS">
+        </div>
+      </div>
     </div>
   </section>
   <!-- men section -->
   <section id="men">
-    <div class="men-title">
-      <p>MEN</p>
-      <hr>
-    </div>
-    <div class="page-count">
-      <p>1/5</p>
-    </div>
-    <div class="items">
-      <div class="item">
-        <img src="./assets/assets/products/tshirt.png" alt="male tshirt">
+    <div class="container-fluid card">
+      <div class="row">
+        <div class="col col-md-2 align-self-start">
+          <p>MEN</p>
+        </div>
+        <div class="col align-end"><hr></div>
       </div>
-      <div class="item">
-        <img src="./assets/assets/products/pants.png" alt="male pants">
+
+      <div>
+        <p>1/5</p>
       </div>
-      <div class="item">
-        <img src="./assets/assets/products/backpack.png" alt="bagpack">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-header">Permits</h4>
+                <div class="card-body">
+                  <img src="./assets/assets/products/tshirt.png" alt="male tshirt">
+                </div>
+                <div class="card-footer">
+                  <p>T-SHIRT</p>
+                  <p>5,00$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-header">Permits</h4>
+                <div class="card-body">
+                  <img src="./assets/assets/products/pants.png" alt="male pants">
+                </div>
+                <div class="card-footer">
+                  <p>T-SHIRT</p>
+                  <p>5,00$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-header">Permits</h4>
+                <div class="card-body">
+                  <img src="./assets/assets/products/backpack.png" alt="bagpack">
+                </div>
+                <div class="card-footer">
+                  <p>T-SHIRT</p>
+                  <p>5,00$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </div>
+
   </section>
   <!-- women section -->
   <section id="men">
