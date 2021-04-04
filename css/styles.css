@@ -131,10 +131,33 @@ header>.container>.card>.card-header h2{
   margin-top: 20px;
   text-align: left;
 }
+
+
 .social{
   background-color: rgb(12, 32, 88);
+  height: 300px;
 }
+.social>.card{
+  margin-top: 20px;
+  text-align: left;
+}
+.social>.card>.container>.card-body{
+  background-color: green;
+  
+}
+.social>.card p{
+  font-size: 10px;
+}
+
 .link{
   background-color: rgb(105, 205, 92);
 }
-
+.link>.card{
+  margin-top: 20px;
+  text-align: left;
+}
+.child {
+  flex: 1 0 21%;
+  margin: 5px;
+  background-color: blue;
+}
