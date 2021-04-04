@@ -6,7 +6,7 @@ header{
   background-image: url('../assets/assets/backgrounds/hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 .navbar{
   padding: 30px
@@ -85,6 +85,7 @@ header>.container>.card>.card-header h2{
   color: rgb(163, 127, 79);
 }
 
+
 #about{
   background-image: url("../assets/assets/backgrounds/about.jpg");
   background-position: center center;
@@ -92,29 +93,36 @@ header>.container>.card>.card-header h2{
   background-size: cover;
   color: white;
   margin-top: 150px;
+  min-height: 402px;
+  max-width: 100%;
 }
-#about>.container-md{
-  height: 500px;
-  width: 900px;
+#about>.bout{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-size: 20px;
+  line-height: 2em;
+  font-weight: bolder;
 }
-#about>.container-md h2{
-  background: transparent none repeat scroll 0 0;
-  display: inline-block;
-  padding: 5px 6px;
-  /* width: 300px; */
+fieldset{
+  border: 2px solid yellow;
+  color: white;
+  text-align: right;
+  max-width: 580px;
+  padding: 0 50px;
+  margin: 0 auto;
 }
-#about>.container-md>.jumbotron{
-  height: 300px;
-  margin: px;
-  border: 5px solid rgb(163, 127, 79);
-}
-#about>.container-md>.jumbotron p{
-  font-size: 30px;
+legend{
+  background-color: rgb(0, 0, 0);
+  padding: 0px 10px;
+  margin-top: -25px;
+  max-width: 150px;
 }
 
 
 #promo{
-  background-color: rgb(92, 92, 92);
+  background-color: rgb(73, 73, 73);
   padding: 15px;
   font-size: 25px;
   color: white;
@@ -124,40 +132,64 @@ header>.container>.card>.card-header h2{
   text-align: left;
 }
 
-.desc{
-  background-color: indianred;
+footer{
+  background-color: #3a3939;
+  height: auto;
+  color: #ffffff;
+}
+.desc>.card , .social>.card, .link>.card{
+  background-color: #3a3939;
 }
 .desc>.card{
   margin-top: 20px;
   text-align: left;
 }
-
+.desc>.card>.card-body h3{
+  text-align: left;
+}
+.desc>.card>.card-body p{
+  text-align: left;
+  font-size: 20px;
+  text-transform: uppercase;
+}
 
 .social{
-  background-color: rgb(12, 32, 88);
   height: 300px;
 }
 .social>.card{
   margin-top: 20px;
   text-align: left;
 }
-.social>.card>.container>.card-body{
-  background-color: green;
-  
+.social>.card>.card-body{
+  flex-basis: 50%;
+  text-align: center;
 }
-.social>.card p{
-  font-size: 10px;
-}
+.social>.card>.card-body>.grid-social{
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 30px;
+  margin: 20px 0px;
 
-.link{
-  background-color: rgb(105, 205, 92);
+}
+.social>.card>.card-body>.grid-social>.grid-item{
+  text-align: center;
+  padding: 5px;
+}
+.grid-social{
+  display: inline-block;
 }
 .link>.card{
   margin-top: 20px;
   text-align: left;
 }
-.child {
-  flex: 1 0 21%;
-  margin: 5px;
-  background-color: blue;
+.link>.card>.card-body p{
+  text-align: left;
+  font-size: 25px;
+}
+.link>.card>.card-body>#l-link{
+  font-size: 19px;
+}
+.copyright{
+  padding: 5px;
+  font-size: 15px;
 }
